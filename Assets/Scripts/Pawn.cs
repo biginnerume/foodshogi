@@ -13,6 +13,14 @@ public class Pawn : Piece
         gameMgr = GetComponent<GameManager>();
     }
 
+    public void Update()
+    {
+        if (gameMgr.selectPiece)
+        {
+            gameMgr.objZones[point.y + 1, point.x].SetActive(true);
+        }
+    }
+
     public override bool JudgeMove(Point next)
     {
         if (point.x != next.x) return false;

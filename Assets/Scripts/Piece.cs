@@ -8,6 +8,8 @@ public abstract class Piece : MonoBehaviour { //抽象クラス
     public Point point { protected set; get; }
     public GameObject model;
 
+    GameManager gameMgr;
+
     public void Create(Point point, GameObject model)
     {
         this.point = point;

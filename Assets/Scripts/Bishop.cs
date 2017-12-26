@@ -10,6 +10,7 @@ public class Bishop : Piece {
         if ((next.x - point.x != next.y - point.y) && (next.x - point.x != point.y - next.y)) return false;
         if ((point.x == next.x) && (point.y == next.y)) return false;
 
+        
         return true;
     }
 
